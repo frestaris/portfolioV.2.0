@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { developers } from "./data/data";
 
-const CARD_HEIGHT = 220;
+const CARD_HEIGHT = 300;
 const EXTRA_SPACE = 180;
 const CONTAINER_HEIGHT = CARD_HEIGHT + EXTRA_SPACE;
 const SPINS = 1;
 
 const DeveloperCard = ({ dev }) => (
   <div
-    className="flex flex-col items-start text-left px-6 text-sm"
+    className="flex flex-col items-start text-left px-6 text-xs xs:text-sm overflow-hidden"
     style={{ height: CARD_HEIGHT }}
   >
     <span className="text-[#da70d6]">{"{"}</span>
-    <div className="pl-6 leading-6 space-y-1">
+    <div className="pl-6 leading-6 space-y-1 overflow-hidden">
       <p>
         <span className="text-[#53b9fe]">id</span>:{" "}
         <span className="text-[#94cea8]">{dev.id}</span>,
@@ -31,6 +31,29 @@ const DeveloperCard = ({ dev }) => (
         <span className="text-[#94cea8]">{dev.age}</span>,
       </p>
       <p>
+        <span className="text-[#53b9fe]">github</span>:{" "}
+        <a
+          href={dev.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#94cea8] underline"
+        >
+          "{dev.github}"
+        </a>
+        ,
+      </p>
+      <p>
+        <span className="text-[#53b9fe]">linkedin</span>:{" "}
+        <a
+          href={dev.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#94cea8] underline"
+        >
+          "{dev.linkedin}"
+        </a>
+      </p>
+      <p>
         <span className="text-[#53b9fe]">nationality</span>:{" "}
         <span className="text-[#ce9178]">"{dev.nationality}"</span>,
       </p>
@@ -39,7 +62,10 @@ const DeveloperCard = ({ dev }) => (
         <span className="text-[#ce9178]">"{dev.occupation}"</span>,
       </p>
     </div>
-    <span className="text-[#da70d6]">{"},"}</span>
+    <p>
+      <span className="text-[#da70d6]">{"}"}</span>
+      <span>,</span>
+    </p>
   </div>
 );
 
@@ -48,6 +74,7 @@ export default function Hero() {
   const [spinning, setSpinning] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Avatar pop from top on mobile
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 768px)");
     const handleResize = () => setIsMobile(mq.matches);
@@ -110,27 +137,17 @@ export default function Hero() {
         </div>
 
         {/* Avatar block */}
-        <div className="col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center order-1 md:order-2 lg:col-start-4 min-h-[220px] md:min-h-0 mt-8 sm:mt-10 md:mt-0">
+        <div className="col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center order-1 md:order-2 lg:col-start-4 min-h-[220px] md:min-h-0 mt-40 md:mt-0">
           {!spinning && (
-            <motion.div
-              initial={
-                isMobile
-                  ? { opacity: 0, y: 100 } // small screens → bottom
-                  : { opacity: 0, x: -80 } // desktop → left
-              }
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex flex-col items-center"
-            >
-              <img
-                src={developers[finalIndex].avatar}
-                alt={`${developers[finalIndex].name} ${developers[finalIndex].surname}`}
-                className="w-40 h-40 md:w-52 md:h-52 lg:w-56 lg:h-56 rounded-full object-cover"
-                style={{
-                  boxShadow: "0 0 35px rgba(255, 255, 255, 0.85)",
-                }}
-              />
-            </motion.div>
+            <motion.img
+              key={developers[finalIndex].id}
+              src={developers[finalIndex].avatar}
+              alt={`${developers[finalIndex].name} ${developers[finalIndex].surname}`}
+              className="w-40 h-40 md:w-52 md:h-52 lg:w-56 lg:h-56 rounded-full object-cover"
+              initial={{ filter: "blur(8px)", opacity: 0 }}
+              animate={{ filter: "blur(0px)", opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+            />
           )}
         </div>
       </div>
