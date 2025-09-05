@@ -9,7 +9,7 @@ const SPINS = 1;
 
 const DeveloperCard = ({ dev }) => (
   <div
-    className="flex flex-col items-start text-left px-6 text-xs xs:text-sm overflow-hidden"
+    className="flex flex-col items-start text-left px-6 text-xs sm:text-sm overflow-hidden"
     style={{ height: CARD_HEIGHT }}
   >
     <span className="text-[#da70d6]">{"{"}</span>
