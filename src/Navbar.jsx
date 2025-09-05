@@ -1,11 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
-    <nav className="fixed top-4 right-4 z-50">
+    <nav ref={navRef} className="fixed top-4 right-4 z-50">
       {/* Hamburger */}
       <div className="flex justify-end">
         <div
@@ -50,18 +70,18 @@ export default function Navbar() {
           />
         </div>
       </div>
+
       {/* Mobile menu panel */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            exit={{ opacity: 1 }}
             className="overflow-visible"
           >
             <motion.ul
-              className="flex flex-col items-center space-y-6 py-6 text-lg font-mono "
+              className="flex flex-col items-center space-y-6 py-6 text-lg font-mono"
               initial="hidden"
               animate="visible"
               exit="exit"

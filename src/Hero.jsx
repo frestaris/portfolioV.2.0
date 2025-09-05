@@ -16,7 +16,7 @@ const DeveloperCard = ({ dev }) => (
     <div className="pl-6 leading-6 space-y-1 overflow-hidden">
       <p>
         <span className="text-[#53b9fe]">id</span>:{" "}
-        <span className="text-[#94cea8]">{dev.id}</span>,
+        <span className="text-[#C586C0]">{dev.id}</span>,
       </p>
       <p>
         <span className="text-[#53b9fe]">name</span>:{" "}
@@ -28,7 +28,7 @@ const DeveloperCard = ({ dev }) => (
       </p>
       <p>
         <span className="text-[#53b9fe]">age</span>:{" "}
-        <span className="text-[#94cea8]">{dev.age}</span>,
+        <span className="text-[#C586C0]">{dev.age}</span>,
       </p>
       <p>
         <span className="text-[#53b9fe]">github</span>:{" "}
@@ -36,23 +36,26 @@ const DeveloperCard = ({ dev }) => (
           href={dev.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#94cea8] underline"
+          className="inline-block max-w-[180px] overflow-hidden text-ellipsis whitespace-nowrap text-[#94cea8] underline align-middle"
+          title={dev.github}
         >
           "{dev.github}"
         </a>
-        ,
       </p>
+
       <p>
         <span className="text-[#53b9fe]">linkedin</span>:{" "}
         <a
           href={dev.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#94cea8] underline"
+          className="inline-block max-w-[180px] overflow-hidden text-ellipsis whitespace-nowrap text-[#94cea8] underline align-middle"
+          title={dev.linkedin}
         >
           "{dev.linkedin}"
         </a>
       </p>
+
       <p>
         <span className="text-[#53b9fe]">nationality</span>:{" "}
         <span className="text-[#ce9178]">"{dev.nationality}"</span>,
@@ -137,7 +140,7 @@ export default function Hero() {
         </div>
 
         {/* Avatar block */}
-        <div className="col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center order-1 md:order-2 lg:col-start-4 min-h-[220px] md:min-h-0 mt-40 md:mt-0">
+        <div className="col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center order-1 md:order-2 lg:col-start-4 min-h-[220px] md:min-h-0 mt-30 md:mt-0">
           {!spinning && (
             <motion.img
               key={developers[finalIndex].id}
@@ -154,5 +157,3 @@ export default function Hero() {
     </div>
   );
 }
-
-// #6a9955 comment color

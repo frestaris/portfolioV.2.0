@@ -20,6 +20,14 @@ import figma from "../assets/figma.png";
 import mysql from "../assets/mysql.png";
 import postgres from "../assets/postgres.png";
 import python from "../assets/python.png";
+import budget1 from "../assets/budgetmate1.png";
+import eCommerce1 from "../assets/eCommerce1.png";
+import dentist1 from "../assets/dentist1.png";
+import gym1 from "../assets/gym1.png";
+import rentcar1 from "../assets/car-rental1.png";
+import ask1 from "../assets/ask1.png";
+import restaurant1 from "../assets/restaurant-1.png";
+import quickpop1 from "../assets/Quickpop-1.png";
 
 export const developers = [
   {
@@ -155,3 +163,190 @@ export const skillGroups = {
     { skill: "Vercel", img: vercel },
   ],
 };
+
+export const projects = [
+  {
+    id: 1,
+    title: "Quick Pop",
+    live: "https://quick-pop.vercel.app/",
+    image: quickpop1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Tailwind CSS" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [
+      { skill: "PostgreSQL" },
+      { skill: "Supabase" },
+      { skill: "Express.js" },
+      { skill: "Node.js" },
+    ],
+    tools: [
+      { skill: "Google Cloud APIs" },
+      { skill: "Geolocation" },
+      { skill: "Stripe" },
+      { skill: "Cloudinary" },
+      { skill: "Bcrypt" },
+      { skill: "Jsonwebtoken" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Rental Car",
+    linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
+    live: "https://mern-rental-car-frontend.vercel.app/",
+    image: rentcar1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Tailwind CSS" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [
+      { skill: "MongoDB" },
+      { skill: "Express.js" },
+      { skill: "Node.js" },
+    ],
+    tools: [
+      { skill: "Stripe" },
+      { skill: "Cloudinary" },
+      { skill: "Bcrypt" },
+      { skill: "Jsonwebtoken" },
+    ],
+  },
+  {
+    id: 3,
+    title: "e-Commerce Plants",
+    linkUrl:
+      "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
+    live: "https://full-stack-e-commerce-plants-website-react.vercel.app/",
+    image: eCommerce1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Tailwind CSS" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [
+      { skill: "MongoDB" },
+      { skill: "Express.js" },
+      { skill: "Node.js" },
+    ],
+    tools: [
+      { skill: "Stripe" },
+      { skill: "Cloudinary" },
+      { skill: "Bcrypt" },
+      { skill: "Jsonwebtoken" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Dentist Website",
+    linkUrl: "https://github.com/frestaris/Dentist-Website",
+    live: "https://dentist-website-frontend.vercel.app/",
+    image: dentist1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Tailwind CSS" },
+      { skill: "React" },
+    ],
+    backend: [
+      { skill: "MongoDB" },
+      { skill: "Express.js" },
+      { skill: "Node.js" },
+    ],
+    tools: [],
+  },
+  {
+    id: 5,
+    title: "BudgetMate",
+    linkUrl: "https://github.com/frestaris/budgetmate",
+    live: "https://budgetmate-frontend.vercel.app/",
+    image: budget1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Flowbite CSS" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [
+      { skill: "MongoDB" },
+      { skill: "Express.js" },
+      { skill: "Node.js" },
+    ],
+    tools: [
+      { skill: "Firebase" },
+      { skill: "Bcrypt" },
+      { skill: "Jsonwebtoken" },
+    ],
+  },
+  {
+    id: 6,
+    title: "Restaurant Website",
+    linkUrl: "https://github.com/frestaris/react-restaurant-app",
+    live: "https://react-app-restaurant-website-sample.netlify.app/",
+    image: restaurant1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Ant Design" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [],
+    tools: [],
+  },
+  {
+    id: 7,
+    title: "Ask",
+    linkUrl: "https://github.com/frestaris/ask",
+    live: "https://ask-frontend-virid.vercel.app/",
+    image: ask1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Bootstrap CSS" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [
+      { skill: "MongoDB" },
+      { skill: "Express.js" },
+      { skill: "Node.js" },
+    ],
+    tools: [
+      { skill: "Firebase" },
+      { skill: "Bcrypt" },
+      { skill: "Jsonwebtoken" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Gym Website",
+    linkUrl: "https://github.com/frestaris/Gym-React",
+    live: "https://brosgym.netlify.app/",
+    image: gym1,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Bootstrap CSS" },
+      { skill: "React" },
+    ],
+    backend: [],
+    tools: [],
+  },
+];
