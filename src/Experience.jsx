@@ -14,7 +14,7 @@ export default function Experience() {
     <section
       id="experience"
       ref={sectionRef}
-      className="relative text-white px-6 md:px-16 py-10 "
+      className="relative text-white px-6 md:px-16 py-14 "
     >
       <h2 className="text-2xl md:text-4xl font-bold mb-16 text-center text-[#4ec9b0]">
         <span className="text-[#808080]">{"<"}</span>Experience

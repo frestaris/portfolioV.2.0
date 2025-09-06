@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen mt-20 md:mt-0 text-white font-mono flex flex-col"
+      className="min-h-screen mt-24 md:mt-0 text-white font-mono flex flex-col"
     >
       <h2 className="text-2xl md:text-4xl font-bold my-16 text-center text-[#4ec9b0]">
         <span className="text-[#808080]">{"<"}</span>Projects
@@ -34,7 +34,8 @@ export default function Projects() {
       {/* Tab bar with native scroll */}
       <div
         ref={containerRef}
-        className="w-full overflow-x-auto bg-[#252526] border-b border-[#333] scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#252526]"
+        className="w-full overflow-x-auto bg-[#252526] border-b border-[#333] top-0 z-10
+             scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#252526]"
       >
         <Reorder.Group
           axis="x"
@@ -66,7 +67,7 @@ export default function Projects() {
       </div>
 
       {/* Editor Window */}
-      <div className="bg-[#1e1e1e] p-6 flex-1 rounded-b-xl shadow-lg">
+      <div className="p-6 flex-1 min-h-0 overflow-hidden">
         <motion.div
           key={active.id}
           initial={{ opacity: 0 }}

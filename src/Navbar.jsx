@@ -76,12 +76,19 @@ export default function Navbar() {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 1 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 0.5, when: "beforeChildren" },
+            }}
+            exit={{
+              opacity: 0,
+              transition: { duration: 0.2, when: "beforeChildren" },
+            }}
             className="overflow-visible"
           >
             <motion.ul
-              className="flex flex-col items-center space-y-6 py-6 text-lg font-mono"
+              className="flex flex-col items-center space-y-6 py-6 px-4 text-lg font-mono
+             rounded-2xl bg-[#2a2a2a] border border-white/20"
               initial="hidden"
               animate="visible"
               exit="exit"
@@ -102,13 +109,13 @@ export default function Navbar() {
               }}
             >
               {[
-                ["#projects", "Projects"],
-                ["#experience", "Experience"],
-                ["#skills", "Skills"],
-                ["#about", "About"],
-              ].map(([href, label]) => (
+                ["projects", "Projects"],
+                ["experience", "Experience"],
+                ["skills", "Skills"],
+                ["about", "About"],
+              ].map(([id, label]) => (
                 <motion.li
-                  key={href}
+                  key={id}
                   variants={{
                     hidden: { opacity: 0, x: 100 },
                     visible: {
@@ -133,15 +140,19 @@ export default function Navbar() {
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300, damping: 15 }}
                 >
-                  <a
-                    href={href}
-                    className="text-[#4ec9b0]"
-                    onClick={() => setIsOpen(false)}
+                  <button
+                    onClick={() => {
+                      document
+                        .getElementById(id)
+                        ?.scrollIntoView({ behavior: "smooth" });
+                      setIsOpen(false);
+                    }}
+                    className="text-[#4ec9b0] hover:cursor-pointer"
                   >
                     <span className="text-[#808080]">{"<"}</span>
                     {label}
                     <span className="text-[#808080]">{">"}</span>
-                  </a>
+                  </button>
                 </motion.li>
               ))}
             </motion.ul>

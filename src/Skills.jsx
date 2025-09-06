@@ -10,7 +10,7 @@ const SkillColumn = ({ skills, direction = "up", delay = 0, title }) => {
   const doubled = [...skills, ...skills];
 
   return (
-    <div className="flex flex-col items-center mt-10">
+    <div className="flex flex-col items-center mt-6">
       {/* Title */}
       {title && (
         <h3 className="text-sm md:text-xl font-semibold mb-4 text-[#47c1db]">
@@ -109,7 +109,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="relative text-white py-16">
+    <section id="skills" className="h-screen relative text-white py-16 mx-2">
       <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center text-[#4ec9b0]">
         <span className="text-[#808080]">{"<"}</span>Skills
         <span className="text-[#808080]">{" />"}</span>

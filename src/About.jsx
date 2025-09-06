@@ -21,7 +21,7 @@ export default function About() {
         <span className="text-[#808080]">{" />"}</span>
       </h2>
 
-      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
         {/* Left: Photo */}
         <div className="flex flex-col items-center lg:items-start">
           <pre className="text-[#53b9fe]">

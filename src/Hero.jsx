@@ -169,20 +169,22 @@ export default function Hero() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="flex flex-col items-center justify-center text-center"
             >
-              {/* Spinner ring with 404 inside */}
-              <div className="relative flex items-center justify-center">
-                {/* Spinner ring */}
-                <div className="w-40 h-40 border-2 border-gray-600 border-t-[#ff5555] rounded-full animate-spin"></div>
+              <div className="w-40 h-40 border-2 border-gray-600 rounded-full"></div>
 
-                {/* 404 text inside ring */}
-                <div className="absolute flex flex-col items-center justify-center">
-                  <p className="text-4xl md:text-5xl font-bold text-[#ff5555] drop-shadow-[0_0_10px_rgba(255,85,85,0.8)]">
-                    404
-                  </p>
-                  <p className="text-xs md:text-sm text-gray-400 tracking-widest font-mono">
-                    NOT FOUND
-                  </p>
-                </div>
+              {/* 404 text inside ring */}
+              <div className="absolute flex flex-col items-center justify-center">
+                <p
+                  className="glitch text-4xl md:text-5xl font-bold text-[#ff5555]"
+                  data-text="404"
+                >
+                  404
+                </p>
+                <p
+                  className="glitch text-xs md:text-sm text-gray-400 tracking-widest font-mono"
+                  data-text="NOT FOUND"
+                >
+                  NOT FOUND
+                </p>
               </div>
             </motion.div>
           ) : (

@@ -9,17 +9,25 @@ export default function PowerShellModal({ onClose, handleSubmit }) {
       {/* Modal */}
       <div className="relative z-10 w-full max-w-2xl mx-2 rounded-md overflow-hidden shadow-lg border border-gray-700">
         {/* Title bar (classic style) */}
-        <div className="bg-[#0c0c0c] text-gray-200 flex justify-between items-center px-3 py-1 text-xs font-sans border-b border-gray-700">
+        <div
+          className="bg-white/10 backdrop-blur-md border-b border-white/20
+             text-gray-200 flex justify-between items-center 
+             px-3 py-2 text-xs font-sans"
+        >
           <div className="flex items-center gap-2">
             <img src={psLogo} alt="PowerShell Logo" className="w-4 h-4" />
             <span>PowerShell</span>
           </div>
-          <button onClick={onClose} className="hover:cursor-pointer">
+          <button
+            onClick={onClose}
+            className="hover:text-[#4ec9b0] hover:cursor-pointer transition"
+          >
             ✕
           </button>
         </div>
+
         {/* Console area */}
-        <div className="bg-black text-green-400 p-4 font-mono text-sm">
+        <div className="bg-[#1a0000] text-[#ff5555] p-4 font-mono text-sm">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col space-y-4 h-full"

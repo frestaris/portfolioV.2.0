@@ -151,7 +151,7 @@ export const projects = [
     live: "https://quick-pop.vercel.app/",
     image: quickpop1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "QuickPop is a modern accommodation booking platform that connects travelers with local hosts for a day or hourly stays. It features dynamic search with map integration, detailed host pages with photos, services, reviews, and availability, secure booking and payments, personalized dashboards for users and hosts, wishlist management, and an admin panel for full platform oversight.",
     frontend: [
       { skill: "Html" },
       { skill: "Tailwind CSS" },
@@ -180,7 +180,7 @@ export const projects = [
     live: "https://mern-rental-car-frontend.vercel.app/",
     image: rentcar1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Rent a Car is a full-stack car rental platform that lets users browse available vehicles, make reservations, and manage bookings online. It includes secure authentication, an intuitive booking flow, admin tools for managing cars and users, and a responsive design that delivers a smooth rental experience across devices.",
     frontend: [
       { skill: "Html" },
       { skill: "Tailwind CSS" },
@@ -207,7 +207,7 @@ export const projects = [
     live: "https://full-stack-e-commerce-plants-website-react.vercel.app/",
     image: eCommerce1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "E-Commerce Plants Website is an online store designed for browsing and purchasing plants. It offers a modern shopping experience with product listings, detailed pages, cart and checkout functionality, secure authentication, and an admin panel for managing inventory and orders.",
     frontend: [
       { skill: "Html" },
       { skill: "Tailwind CSS" },
@@ -233,7 +233,7 @@ export const projects = [
     live: "https://dentist-website-frontend.vercel.app/",
     image: dentist1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Dentist Website is a professional application for a dental clinic, featuring service overviews, a booking form, contact details, and a clean, responsive design that ensures an accessible and user-friendly experience for patients.",
     frontend: [
       { skill: "Html" },
       { skill: "Tailwind CSS" },
@@ -253,7 +253,7 @@ export const projects = [
     live: "https://budgetmate-frontend.vercel.app/",
     image: budget1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "BudgetMate is a personal finance app that helps users track income, expenses, and budgets with ease. It includes clear visualizations, category-based organization, and a contact CRUD feature, giving users simple tools to manage both their finances and contacts in one place.",
     frontend: [
       { skill: "Html" },
       { skill: "Flowbite CSS" },
@@ -278,7 +278,7 @@ export const projects = [
     live: "https://react-app-restaurant-website-sample.netlify.app/",
     image: restaurant1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Restaurant Webiste is a modern web application for restaurants that showcases menus, allows customers to place orders, and provides a smooth, responsive user experience. It includes features like an interactive menu, cart and checkout flow, and a contact form for reservations or inquiries.",
     frontend: [
       { skill: "Html" },
       { skill: "Ant Design" },
@@ -295,7 +295,7 @@ export const projects = [
     live: "https://ask-frontend-virid.vercel.app/",
     image: ask1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Ask is a community-driven Q&A platform where users can post questions, share answers, and engage through comments and likes. It features secure authentication, real-time interactions, and a clean, responsive interface designed to encourage knowledge sharing and discussion.",
     frontend: [
       { skill: "Html" },
       { skill: "Bootstrap CSS" },
@@ -320,7 +320,7 @@ export const projects = [
     live: "https://brosgym.netlify.app/",
     image: gym1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Gym React is a fitness-focused website that showcases gym services, classes, and trainers through a clean and responsive interface. It highlights membership options, provides contact and inquiry forms, and delivers an engaging online presence for fitness businesses.",
     frontend: [
       { skill: "Html" },
       { skill: "Bootstrap CSS" },
