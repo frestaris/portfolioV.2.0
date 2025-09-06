@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="mt-20 md:mt-0 text-white font-mono flex flex-col"
+      className="min-h-screen mt-20 md:mt-0 text-white font-mono flex flex-col"
     >
       <h2 className="text-2xl md:text-4xl font-bold my-16 text-center text-[#4ec9b0]">
         <span className="text-[#808080]">{"<"}</span>Projects
@@ -79,14 +79,14 @@ export default function Projects() {
             <img
               src={active.image}
               alt={active.title}
-              className="rounded-lg border border-[#333] max-h-[70vh] object-contain"
+              className="rounded-lg border border-[#333] object-contain"
             />
           </div>
 
           {/* Right: Code */}
           <div className="w-full md:w-1/2">
             <pre className="text-xs sm:text-sm leading-6 whitespace-pre-wrap break-words h-full">
-              <code className="flex flex-col h-full">
+              <code className="flex flex-col">
                 {/* Comment */}
                 <span className="text-[#6a9955] mb-auto">
                   {"// " + active.description}

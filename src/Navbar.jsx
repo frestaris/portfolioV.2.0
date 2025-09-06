@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav ref={navRef} className="fixed top-4 right-4 z-50">
+    <nav ref={navRef} className="fixed top-8 right-8 z-50">
       {/* Hamburger */}
       <div className="flex justify-end">
         <div
@@ -89,23 +89,23 @@ export default function Navbar() {
                 hidden: {},
                 visible: {
                   transition: {
-                    staggerChildren: 0.15,
+                    staggerChildren: 0.05,
                     staggerDirection: 1,
                   },
                 },
                 exit: {
                   transition: {
-                    staggerChildren: 0.15,
+                    staggerChildren: 0.05,
                     staggerDirection: -1,
                   },
                 },
               }}
             >
               {[
+                ["#projects", "Projects"],
                 ["#experience", "Experience"],
                 ["#skills", "Skills"],
                 ["#about", "About"],
-                ["#projects", "Projects"],
               ].map(([href, label]) => (
                 <motion.li
                   key={href}
