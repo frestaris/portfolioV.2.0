@@ -1,24 +1,25 @@
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactjs from "../assets/react.png";
-import bootstrap from "../assets/bootstrap.png";
-import node from "../assets/node.png";
-import github from "../assets/github.png";
-import git from "../assets/git.png";
-import netlify from "../assets/netlify.png";
-import redux from "../assets/redux.png";
-import tailwind from "../assets/tailwind.png";
-import mongodb from "../assets/mongodb.png";
-import express from "../assets/expressjs.png";
-import postman from "../assets/postman.png";
-import stripe from "../assets/stripe.png";
-import cloudinary from "../assets/cloudinary.png";
-import vercel from "../assets/Vercel.png";
-import figma from "../assets/figma.png";
-import mysql from "../assets/mysql.png";
-import postgres from "../assets/postgres.png";
-import python from "../assets/python.png";
+import html from "../assets/skills-logo/html.png";
+import css from "../assets/skills-logo/css.png";
+import javascript from "../assets/skills-logo/javascript.png";
+import reactjs from "../assets/skills-logo/react.png";
+import bootstrap from "../assets/skills-logo/bootstrap.png";
+import node from "../assets/skills-logo/node.png";
+import github from "../assets/skills-logo/github.png";
+import git from "../assets/skills-logo/git.png";
+import netlify from "../assets/skills-logo/netlify.png";
+import redux from "../assets/skills-logo/redux.png";
+import tailwind from "../assets/skills-logo/tailwind.png";
+import mongodb from "../assets/skills-logo/mongodb.png";
+import express from "../assets/skills-logo/expressjs.png";
+import postman from "../assets/skills-logo/postman.png";
+import stripe from "../assets/skills-logo/stripe.png";
+import cloudinary from "../assets/skills-logo/cloudinary.png";
+import googlecloud from "../assets/skills-logo/googlecloud.png";
+import vercel from "../assets/skills-logo/Vercel.png";
+import figma from "../assets/skills-logo/figma.png";
+import mysql from "../assets/skills-logo/mysql.png";
+import postgres from "../assets/skills-logo/postgres.png";
+import python from "../assets/skills-logo/python.png";
 
 export const skillGroups = {
   frontend: [
@@ -43,6 +44,7 @@ export const skillGroups = {
     { skill: "Github", img: github },
     { skill: "Postman", img: postman },
     { skill: "Cloudinary", img: cloudinary },
+    { skill: "Google Cloud", img: googlecloud },
     { skill: "Stripe", img: stripe },
     { skill: "Figma", img: figma },
     { skill: "Netlify", img: netlify },

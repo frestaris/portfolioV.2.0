@@ -55,9 +55,11 @@ export default function TimelineItem({ exp, idx, total, scrollYProgress }) {
 
         {/* Role + Company */}
         <div className="pl-16 md:pl-8 text-left">
-          <h3 className="text-xl font-bold">{exp.role}</h3>
-          <h4 className="text-md text-[#61DAFB]">{exp.company}</h4>
-          <p className="mt-2 text-gray-300">{exp.description}</p>
+          <h3 className="sm:text-xl text-xs font-bold">{exp.role}</h3>
+          <h4 className="sm:text-md text-xs text-[#61DAFB]">{exp.company}</h4>
+          <p className="mt-2 sm:text-base text-xs text-gray-400">
+            {exp.description}
+          </p>
         </div>
       </motion.div>
     </div>

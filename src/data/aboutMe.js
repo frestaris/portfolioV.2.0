@@ -29,3 +29,14 @@ export const emailConfig = {
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
   publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 };
+
+// Note: For emailJS to work, the domain (localhost or production URL) must be added to the "Allowed Domains" list in your EmailJS account settings.
+// Also, the env variables must be prefixed with VITE_ to be accessible in the client-side code.
+
+// Example .env file entries:
+
+// VITE_EMAILJS_SERVICE_ID=your_service_id
+// VITE_EMAILJS_TEMPLATE_ID=your_template_id
+// VITE_EMAILJS_PUBLIC_KEY=your_public_key
+
+// Replace the placeholder values with your actual EmailJS service Id, template Id, and public key.

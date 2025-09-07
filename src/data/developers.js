@@ -10,7 +10,7 @@ export const developers = [
     github: "https://github.com/frestaris",
     linkedin: "https://www.linkedin.com/in/aris-fresta-33a631100/",
     nationality: "Australian",
-    occupation: "Web Developer",
+    occupation: "Freelancer",
     avatar: hero_pic,
     resume: resumeFile,
   },

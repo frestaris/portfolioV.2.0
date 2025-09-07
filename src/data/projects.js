@@ -1,34 +1,48 @@
-import budget1 from "../assets/budgetmate1.png";
-import budget2 from "../assets/budgetmate2.png";
-import budget3 from "../assets/budgetmate3.png";
-import eCommerce1 from "../assets/eCommerce1.png";
-import eCommerce2 from "../assets/eCommerce2.png";
-import eCommerce3 from "../assets/eCommerce3.png";
-import dentist1 from "../assets/dentist1.png";
-import dentist2 from "../assets/dentist2.png";
-import dentist3 from "../assets/dentist3.png";
-import gym1 from "../assets/gym1.png";
-import gym2 from "../assets/gym2.png";
-import gym3 from "../assets/gym3.png";
-import rentcar1 from "../assets/car-rental1.png";
-import rentcar2 from "../assets/car-rental2.png";
-import rentcar3 from "../assets/car-rental3.png";
-import ask1 from "../assets/ask1.png";
-import ask2 from "../assets/ask2.png";
-import ask3 from "../assets/ask3.png";
-import restaurant1 from "../assets/restaurant-1.png";
-import restaurant2 from "../assets/restaurant-2.png";
-import restaurant3 from "../assets/restaurant-3.png";
-import quickpop1 from "../assets/Quickpop-1.png";
-import quickpop2 from "../assets/Quickpop-2.png";
-import quickpop3 from "../assets/Quickpop-3.png";
+import budget1 from "../assets/projects-images/budgetmate1.png";
+import budget2 from "../assets/projects-images/budgetmate2.png";
+import budget3 from "../assets/projects-images/budgetmate3.png";
+import eCommerce1 from "../assets/projects-images/eCommerce1.png";
+import eCommerce2 from "../assets/projects-images/eCommerce2.png";
+import eCommerce3 from "../assets/projects-images/eCommerce3.png";
+import dentist1 from "../assets/projects-images/dentist1.png";
+import dentist2 from "../assets/projects-images/dentist2.png";
+import dentist3 from "../assets/projects-images/dentist3.png";
+import gym1 from "../assets/projects-images/gym1.png";
+import gym2 from "../assets/projects-images/gym2.png";
+import gym3 from "../assets/projects-images/gym3.png";
+import rentcar1 from "../assets/projects-images/car-rental1.png";
+import rentcar2 from "../assets/projects-images/car-rental2.png";
+import rentcar3 from "../assets/projects-images/car-rental3.png";
+import ask1 from "../assets/projects-images/ask1.png";
+import ask2 from "../assets/projects-images/ask2.png";
+import ask3 from "../assets/projects-images/ask3.png";
+import restaurant1 from "../assets/projects-images/restaurant-1.png";
+import restaurant2 from "../assets/projects-images/restaurant-2.png";
+import restaurant3 from "../assets/projects-images/restaurant-3.png";
+import quickpop1 from "../assets/projects-images/Quickpop-1.png";
+import quickpop2 from "../assets/projects-images/Quickpop-2.png";
+import quickpop3 from "../assets/projects-images/Quickpop-3.png";
+import quickpop4 from "../assets/projects-images/Quickpop-4.png";
+import quickpop5 from "../assets/projects-images/Quickpop-5.png";
+import quickpop6 from "../assets/projects-images/Quickpop-6.png";
+import quickpop7 from "../assets/projects-images/Quickpop-7.png";
+import quickpop8 from "../assets/projects-images/Quickpop-8.png";
 
 export const projects = [
   {
     id: 1,
     title: "Quick Pop",
     live: "https://quick-pop.vercel.app/",
-    images: [quickpop1, quickpop2, quickpop3],
+    images: [
+      quickpop1,
+      quickpop2,
+      quickpop3,
+      quickpop4,
+      quickpop5,
+      quickpop6,
+      quickpop7,
+      quickpop8,
+    ],
     description:
       "QuickPop is a modern accommodation booking platform that connects travelers with local hosts for a day or hourly stays. It features dynamic search with map integration, detailed host pages with photos, services, reviews, and availability, secure booking and payments, personalized dashboards for users and hosts, wishlist management, and an admin panel for full platform oversight.",
     frontend: [
