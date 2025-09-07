@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import pdfFile from "./assets/Resume_ArisFresta_2025.pdf";
-import { developers } from "./data/data";
+import { developers } from "./data/developers";
 
 const CARD_HEIGHT = 310;
 const EXTRA_SPACE = 180;
@@ -12,8 +11,8 @@ const SPINS = 1;
 const DeveloperCard = ({ dev }) => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = pdfFile;
-    link.download = "Aris_Fresta_CV.pdf";
+    link.href = dev.resume;
+    link.download = `${dev.name}_${dev.surname}_CV.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { aboutMe } from "./data/data";
-import pic from "./assets/pic-1.jpg";
+import { aboutMe } from "./data/aboutMe";
 import PowerShellModal from "./PowerShellModal";
-import { Award, GraduationCap } from "lucide-react";
 
 export default function About() {
   const [showForm, setShowForm] = useState(false);
@@ -24,21 +22,30 @@ export default function About() {
             [<span className="text-[#ce9178]">Photo</span>]
           </pre>
           <img
-            src={pic}
+            src={aboutMe.picture}
             alt="Aris Fresta"
             className="w-48 h-48 md:w-56 md:h-56 rounded-2xl border border-white/20 shadow-lg object-cover mt-2"
           />
 
           {/* Experience & Education as comments */}
           <div className="mt-6 flex flex-wrap gap-4 text-sm lg:flex-col lg:items-start">
-            <span className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#4ec9b0] text-[#4ec9b0] bg-[#4ec9b0]/10">
-              <Award size={16} className="text-[#4ec9b0]" />
-              2+ years · Web Dev
-            </span>
-            <span className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#ffc811] text-[#ffc811] bg-[#ffc811]/10">
-              <GraduationCap size={16} className="text-[#ffc811]" />
-              Self-Taught
-            </span>
+            {aboutMe.badges.map((badge) => {
+              const Icon = badge.icon;
+              return (
+                <span
+                  key={badge.id}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border"
+                  style={{
+                    borderColor: badge.color,
+                    color: badge.color,
+                    backgroundColor: `${badge.color}1A`,
+                  }}
+                >
+                  <Icon size={16} style={{ color: badge.color }} />
+                  {badge.text}
+                </span>
+              );
+            })}
           </div>
         </div>
 

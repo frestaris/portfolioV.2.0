@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, Reorder } from "framer-motion";
-import { projects } from "./data/data";
+import { projects } from "./data/projects";
 import reactjs from "./assets/react.png";
 
 export default function Projects() {

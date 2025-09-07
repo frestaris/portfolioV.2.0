@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import psLogo from "./assets/powershell.png";
+import { emailConfig } from "./data/aboutMe";
 
 export default function PowerShellModal({ onClose }) {
   const formRef = useRef();
@@ -33,13 +34,12 @@ export default function PowerShellModal({ onClose }) {
     }
 
     setIsSending(true);
-
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        emailConfig.serviceId,
+        emailConfig.templateId,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        emailConfig.publicKey
       )
       .then(
         () => {

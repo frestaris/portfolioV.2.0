@@ -1,4 +1,4 @@
-import { skillGroups } from "./data/data";
+import { skillGroups } from "./data/skills";
 import { motion } from "framer-motion";
 
 const CARD_HEIGHT = 120;
@@ -102,11 +102,11 @@ const SkillColumn = ({ skills, direction = "up", delay = 0, title }) => {
 };
 
 export default function Skills() {
-  const columns = [
-    { data: skillGroups.frontend, dir: "up", title: "Frontend" },
-    { data: skillGroups.backend, dir: "down", title: "Backend" },
-    { data: skillGroups.tools, dir: "up", title: "Tools" },
-  ];
+  const columns = Object.entries(skillGroups).map(([title, data], index) => ({
+    title,
+    data,
+    dir: index % 2 === 0 ? "up" : "down",
+  }));
 
   return (
     <section id="skills" className="h-screen relative text-white py-16 mx-2">
