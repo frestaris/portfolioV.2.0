@@ -2,14 +2,10 @@ import { useState } from "react";
 import { aboutMe } from "./data/data";
 import pic from "./assets/pic-1.jpg";
 import PowerShellModal from "./PowerShellModal";
+import { Award, GraduationCap } from "lucide-react";
 
 export default function About() {
   const [showForm, setShowForm] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
 
   return (
     <section
@@ -35,11 +31,13 @@ export default function About() {
 
           {/* Experience & Education as comments */}
           <div className="mt-6 flex flex-wrap gap-4 text-sm lg:flex-col lg:items-start">
-            <span className="px-4 py-2 rounded-full border border-[#4ec9b0] text-[#4ec9b0] bg-[#4ec9b0]/10">
-              🏆 2+ years · Web Dev
+            <span className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#4ec9b0] text-[#4ec9b0] bg-[#4ec9b0]/10">
+              <Award size={16} className="text-[#4ec9b0]" />
+              2+ years · Web Dev
             </span>
-            <span className="px-4 py-2 rounded-full border border-[#ffc811] text-[#ffc811] bg-[#ffc811]/10">
-              🎓 Self-Taught
+            <span className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#ffc811] text-[#ffc811] bg-[#ffc811]/10">
+              <GraduationCap size={16} className="text-[#ffc811]" />
+              Self-Taught
             </span>
           </div>
         </div>
@@ -117,10 +115,7 @@ export default function About() {
               </div>
             </div>
           ) : (
-            <PowerShellModal
-              onClose={() => setShowForm(false)}
-              handleSubmit={handleSubmit}
-            />
+            <PowerShellModal onClose={() => setShowForm(false)} />
           )}
         </div>
       </div>

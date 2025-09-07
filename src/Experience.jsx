@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { experiences } from "./data/data";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
@@ -28,9 +29,7 @@ export default function Experience() {
             <div className="absolute w-1 h-full bg-gray-700" />
             <motion.div
               style={{ scaleY: scrollYProgress }}
-              className="absolute origin-top w-1 h-full 
-                         bg-gradient-to-b from-[#334155] to-[#61DAFB]
- z-10"
+              className="absolute origin-top w-1 h-full bg-gradient-to-b from-[#334155] to-[#61DAFB] z-10"
             />
           </div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from "react";
 import { motion, Reorder } from "framer-motion";
 import { projects } from "./data/data";
@@ -98,7 +99,7 @@ export default function Projects() {
                     key={i}
                     src={img}
                     alt={`${active.title} ${i + 1}`}
-                    className="w-full h-full flex-shrink-0 object-contain bg-[#1e1e1e]"
+                    className="w-full h-full flex-shrink-0 object-contain"
                   />
                 ))}
               </motion.div>
@@ -106,10 +107,10 @@ export default function Projects() {
               {activeIndex > 0 && (
                 <button
                   onClick={() => setActiveIndex(activeIndex - 1)}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 
-             flex items-center justify-center
+                  className="sm:block hidden absolute left-4 top-1/2 -translate-y-1/2 
+              items-center justify-center
              w-10 h-10 rounded-full 
-             bg-[#398cd6] hover:bg-[#398cd6]/70
+             bg-[#398cd6] hover:bg-[#2880cc]
              text-white text-3xl leading-none hover:cursor-pointer"
                 >
                   ‹
@@ -120,10 +121,10 @@ export default function Projects() {
               {activeIndex < active.images.length - 1 && (
                 <button
                   onClick={() => setActiveIndex(activeIndex + 1)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 
-             flex items-center justify-center
+                  className="sm:block hidden absolute right-4 top-1/2 -translate-y-1/2 
+              items-center justify-center
              w-10 h-10 rounded-full 
-             bg-[#398cd6] hover:bg-[#398cd6]/70
+             bg-[#398cd6] hover:bg-[#2880cc]
              text-white text-3xl leading-none hover:cursor-pointer"
                 >
                   ›
@@ -156,7 +157,6 @@ export default function Projects() {
                 {/* Main code */}
                 <div>
                   {"\n"}
-                  <span className="text-[#C57991]">export</span>{" "}
                   <span className="text-[#398cd6]">const</span>{" "}
                   <span className="text-[#47c1db]">{active.title}</span> ={" "}
                   <span className="text-[#ffc811]">{"{"}</span>

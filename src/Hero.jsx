@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import pdfFile from "./assets/Resume_ArisFresta_2025.pdf";

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion, useTransform } from "framer-motion";
 
 export default function TimelineItem({ exp, idx, total, scrollYProgress }) {
