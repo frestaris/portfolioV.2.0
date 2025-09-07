@@ -1,7 +1,7 @@
 import { experiences } from "./data/experiences";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-import TimelineItem from "./TimeLineItem";
+import TimelineItem from "./TimelineItem"; // correct spelling + case
 
 export default function Experience() {
   const sectionRef = useRef(null);
