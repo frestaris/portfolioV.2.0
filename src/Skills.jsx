@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { skillGroups } from "./data/data";
 import { motion } from "framer-motion";
 

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { experiences } from "./data/data";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
