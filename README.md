@@ -271,10 +271,7 @@ The build will generate a `dist/` folder you can deploy to **Netlify, Vercel, Gi
 ## 📄 License & Copyright
 
 This project is provided as a **commercial template**.  
-You may customize and use it for your personal portfolio.
-
-❌ **Unauthorized resale or redistribution is strictly prohibited.**  
-© 2025 [Aris Fresta](mailto:frestaris.web.developer@gmail.com) – All rights reserved.
+See the [LICENSE](./LICENSE) file for full details.
 
 ---
 
