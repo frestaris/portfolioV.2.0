@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, Reorder } from "framer-motion";
 import { projects } from "./data/data";
 import reactjs from "./assets/react.png";
@@ -6,6 +6,7 @@ import reactjs from "./assets/react.png";
 export default function Projects() {
   const [items, setItems] = useState(projects);
   const [active, setActive] = useState(projects[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
 
   const handleDrag = (event, info) => {
@@ -20,6 +21,11 @@ export default function Projects() {
       containerRef.current.scrollLeft += scrollSpeed;
     }
   };
+
+  useEffect(() => {
+    // reset carousel when switching project
+    setActiveIndex(0);
+  }, [active.id]);
 
   return (
     <section
@@ -75,13 +81,67 @@ export default function Projects() {
           transition={{ duration: 0.4 }}
           className="h-full flex flex-col md:flex-row gap-6"
         >
-          {/* Left: Image (50%), aligned top */}
+          {/* Left: Carousel (50%), aligned top */}
           <div className="w-full md:w-1/2 flex items-start justify-start">
-            <img
-              src={active.image}
-              alt={active.title}
-              className="rounded-lg border border-[#333] object-contain"
-            />
+            <motion.div
+              key={active.id}
+              className="relative w-full h-72 md:h-96 overflow-hidden rounded-lg "
+            >
+              {/* Track */}
+              <motion.div
+                className="flex h-full"
+                animate={{ x: `-${activeIndex * 100}%` }}
+                transition={{ type: "spring", stiffness: 100, damping: 20 }}
+              >
+                {active.images.map((img, i) => (
+                  <img
+                    key={i}
+                    src={img}
+                    alt={`${active.title} ${i + 1}`}
+                    className="w-full h-full flex-shrink-0 object-contain bg-[#1e1e1e]"
+                  />
+                ))}
+              </motion.div>
+              {/* Left arrow */}
+              {activeIndex > 0 && (
+                <button
+                  onClick={() => setActiveIndex(activeIndex - 1)}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 
+             flex items-center justify-center
+             w-10 h-10 rounded-full 
+             bg-[#398cd6] hover:bg-[#398cd6]/70
+             text-white text-3xl leading-none hover:cursor-pointer"
+                >
+                  ‹
+                </button>
+              )}
+
+              {/* Right arrow */}
+              {activeIndex < active.images.length - 1 && (
+                <button
+                  onClick={() => setActiveIndex(activeIndex + 1)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 
+             flex items-center justify-center
+             w-10 h-10 rounded-full 
+             bg-[#398cd6] hover:bg-[#398cd6]/70
+             text-white text-3xl leading-none hover:cursor-pointer"
+                >
+                  ›
+                </button>
+              )}
+              {/* Controls */}
+              <div className="absolute inset-x-0 bottom-2 flex justify-center space-x-2">
+                {active.images.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveIndex(i)}
+                    className={`w-3 h-3 rounded-full hover:cursor-pointer ${
+                      i === activeIndex ? "bg-[#398cd6]" : "bg-gray-600"
+                    }`}
+                  />
+                ))}
+              </div>
+            </motion.div>
           </div>
 
           {/* Right: Code */}
@@ -137,14 +197,21 @@ export default function Projects() {
                     </span>
                   ))}
                   <span className="text-[#a464d6]">{"]"}</span>,{"\n"}
-                  &nbsp;&nbsp;<span className="text-[#53b9fe]">demo</span>:{" "}
+                  &nbsp;&nbsp;<span className="text-[#53b9fe]">
+                    photos
+                  </span>:{" "}
+                  <span className="text-[#C586C0]">{active.images.length}</span>
+                  ,{"\n"}
+                  &nbsp;&nbsp;
+                  <span className="text-[#53b9fe]">demo</span>:{" "}
                   <a
                     href={active.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-[#94cea8] underline"
+                    title={active.live}
+                    className="text-[#94cea8] underline hover:cursor-pointer"
                   >
-                    "{active.live}"
+                    "Live link"
                   </a>
                   ,{"\n"}
                   {active.linkUrl && (
@@ -154,9 +221,10 @@ export default function Projects() {
                         href={active.linkUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-[#94cea8] underline"
+                        title={active.linkUrl}
+                        className="text-[#94cea8] underline hover:cursor-pointer"
                       >
-                        "{active.linkUrl}"
+                        "Github repository link"
                       </a>
                       ,{"\n"}
                     </>
