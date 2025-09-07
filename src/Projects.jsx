@@ -58,15 +58,17 @@ export default function Projects() {
                 opacity: 1,
               }}
               onDrag={handleDrag}
-              className={`px-4 py-2 text-sm whitespace-nowrap flex items-center gap-2 cursor-pointer ${
-                active.id === p.id
-                  ? "bg-[#1e1e1e] text-[#ffc811] border-t-2 border-[#398cd6]"
-                  : "text-gray-400 hover:text-gray-200"
-              }`}
+              className={`px-4 py-2 text-sm whitespace-nowrap flex items-center gap-2 cursor-pointer 
+          border-l border-r border-white/20
+          ${
+            active.id === p.id
+              ? "bg-[#1e1e1e] text-[#ffc811] border-t-2 border-t-[#398cd6]"
+              : "text-gray-400 hover:text-gray-200"
+          }`}
               onClick={() => setActive(p)}
             >
               <img src={reactjs} alt="icon" className="w-4 h-4" />
-              {p.title}.jsx
+              <span className="pr-4">{p.title}.jsx</span>
             </Reorder.Item>
           ))}
         </Reorder.Group>
@@ -106,11 +108,9 @@ export default function Projects() {
               {activeIndex > 0 && (
                 <button
                   onClick={() => setActiveIndex(activeIndex - 1)}
-                  className="sm:block hidden absolute left-4 top-1/2 -translate-y-1/2 
+                  className="absolute left-4 top-1/2 -translate-y-1/2 
               items-center justify-center
-             w-10 h-10 rounded-full 
-             bg-[#398cd6] hover:bg-[#2880cc]
-             text-white text-3xl leading-none hover:cursor-pointer"
+             text-[#398cd6] text-4xl sm:text-6xl leading-none hover:cursor-pointer"
                 >
                   ‹
                 </button>
@@ -120,11 +120,8 @@ export default function Projects() {
               {activeIndex < active.images.length - 1 && (
                 <button
                   onClick={() => setActiveIndex(activeIndex + 1)}
-                  className="sm:block hidden absolute right-4 top-1/2 -translate-y-1/2 
-              items-center justify-center
-             w-10 h-10 rounded-full 
-             bg-[#398cd6] hover:bg-[#2880cc]
-             text-white text-3xl leading-none hover:cursor-pointer"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 
+              items-center justify-center text-[#398cd6] text-4xl sm:text-6xl leading-none hover:cursor-pointer"
                 >
                   ›
                 </button>

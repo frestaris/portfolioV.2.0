@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { developers } from "./data/developers";
+import { developers, developersSpins } from "./data/developers";
 
 const CARD_HEIGHT = 310;
 const EXTRA_SPACE = 180;
 const CONTAINER_HEIGHT = CARD_HEIGHT + EXTRA_SPACE;
-const SPINS = 1;
+const SPINS = developersSpins;
 
 const DeveloperCard = ({ dev }) => {
   const handleDownloadCV = () => {

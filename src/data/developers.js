@@ -1,6 +1,8 @@
 import hero_pic from "../assets/profile-pic.jpg";
 import resumeFile from "../assets/Resume_ArisFresta_2025.pdf";
 
+export const developersSpins = 5; // Change here if you want more or less spins
+
 export const developers = [
   {
     id: 1293,
