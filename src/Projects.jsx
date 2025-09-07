@@ -27,6 +27,16 @@ export default function Projects() {
     setActiveIndex(0);
   }, [active.id]);
 
+  useEffect(() => {
+    // Preload the first image of each project
+    projects.forEach((p) => {
+      if (p.images[0]) {
+        const img = new Image();
+        img.src = p.images[0];
+      }
+    });
+  }, []);
+
   return (
     <section
       id="projects"
@@ -96,14 +106,20 @@ export default function Projects() {
                 transition={{ type: "spring", stiffness: 100, damping: 20 }}
               >
                 {active.images.map((img, i) => (
-                  <img
+                  <motion.img
                     key={i}
                     src={img}
                     alt={`${active.title} ${i + 1}`}
                     className="w-full h-full flex-shrink-0 object-contain"
+                    loading={i === 0 ? "eager" : "lazy"}
+                    decode="async"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.2 }}
                   />
                 ))}
               </motion.div>
+
               {/* Left arrow */}
               {activeIndex > 0 && (
                 <button
@@ -126,6 +142,7 @@ export default function Projects() {
                   ›
                 </button>
               )}
+
               {/* Controls */}
               <div className="absolute inset-x-0 bottom-2 flex justify-center space-x-2">
                 {active.images.map((_, i) => (

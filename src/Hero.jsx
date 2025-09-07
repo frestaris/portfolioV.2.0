@@ -145,11 +145,11 @@ export default function Hero() {
 
             {/* Gradient fades */}
             <div
-              className="absolute top-0 left-0 right-0 bg-gradient-to-b from-[#1e1e1e] to-transparent"
+              className="absolute top-0 left-0 right-0 bg-gradient-to-b from-[#1f1f1f] to-transparent"
               style={{ height: CONTAINER_HEIGHT / 3 }}
             />
             <div
-              className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1e1e1e] to-transparent"
+              className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1f1f1f] to-transparent"
               style={{ height: CONTAINER_HEIGHT / 3 }}
             />
           </div>
@@ -169,7 +169,7 @@ export default function Hero() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="flex flex-col items-center justify-center text-center"
             >
-              <div className="w-40 h-40 border-2 border-gray-600 rounded-full"></div>
+              <div className="w-40 h-40 md:w-52 md:h-52 lg:w-56 lg:h-56 border-2 border-gray-600 rounded-full"></div>
 
               {/* 404 text inside ring */}
               <div className="absolute flex flex-col items-center justify-center">

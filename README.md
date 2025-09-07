@@ -237,6 +237,27 @@ The contact form looks like a **PowerShell terminal window**, styled with Tailwi
 
 ---
 
+## 📊 Google Analytics Integration (Optional)
+
+_(This step is optional. You can skip it if you don’t need analytics tracking.)_
+
+This project supports Google Analytics 4 (GA4) tracking.
+You can enable it by setting up an environment variable with your Measurement ID.
+
+1. Create a Google Analytics property
+
+Go to [Google Analytics](https://analytics.google.com/) and create a new property for your app.
+
+Copy your Measurement ID (it looks like G-XXXXXXXXXX).
+
+2. Add the Measurement ID to .env
+
+```
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+⚠️ Replace G-XXXXXXXXXX with your own GA ID.
+
 ## 📦 Build for Production
 
 ```bash
