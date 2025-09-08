@@ -108,3 +108,13 @@ body {
     transform: skew(-2deg);
   }
 }
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin-slow 3s linear infinite;
+}

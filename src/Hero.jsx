@@ -169,22 +169,24 @@ export default function Hero() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="flex flex-col items-center justify-center text-center"
             >
-              <div className="w-40 h-40 md:w-52 md:h-52 lg:w-56 lg:h-56 border-2 border-gray-600 rounded-full"></div>
+              <div className="relative flex items-center justify-center">
+                <div className="w-40 h-40 md:w-52 md:h-52 lg:w-56 lg:h-56 border-2 border-gray-600 border-t-[#ff5555] rounded-full spin"></div>
 
-              {/* 404 text inside ring */}
-              <div className="absolute flex flex-col items-center justify-center">
-                <p
-                  className="glitch text-4xl md:text-5xl font-bold text-[#ff5555]"
-                  data-text="404"
-                >
-                  404
-                </p>
-                <p
-                  className="glitch text-xs md:text-sm text-gray-400 tracking-widest font-mono"
-                  data-text="NOT FOUND"
-                >
-                  NOT FOUND
-                </p>
+                {/* 404 text inside ring */}
+                <div className="absolute flex flex-col items-center justify-center">
+                  <p
+                    className="glitch text-4xl md:text-5xl font-bold text-[#ff5555]"
+                    data-text="404"
+                  >
+                    404
+                  </p>
+                  <p
+                    className="glitch text-xs md:text-sm text-gray-400 tracking-widest font-mono"
+                    data-text="NOT FOUND"
+                  >
+                    NOT FOUND
+                  </p>
+                </div>
               </div>
             </motion.div>
           ) : (

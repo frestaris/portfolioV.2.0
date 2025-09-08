@@ -149,7 +149,7 @@ export default function Projects() {
                   <button
                     key={i}
                     onClick={() => setActiveIndex(i)}
-                    className={`w-3 h-3 rounded-full hover:cursor-pointer ${
+                    className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full hover:cursor-pointer ${
                       i === activeIndex ? "bg-[#398cd6]" : "bg-gray-600"
                     }`}
                   />

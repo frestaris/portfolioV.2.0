@@ -27,6 +27,9 @@ import quickpop5 from "../assets/projects-images/Quickpop-5.png";
 import quickpop6 from "../assets/projects-images/Quickpop-6.png";
 import quickpop7 from "../assets/projects-images/Quickpop-7.png";
 import quickpop8 from "../assets/projects-images/Quickpop-8.png";
+import portfolio1 from "../assets/projects-images/portfolio-1.png";
+import portfolio2 from "../assets/projects-images/portfolio-2.png";
+import portfolio3 from "../assets/projects-images/portfolio-3.png";
 
 export const projects = [
   {
@@ -141,6 +144,23 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Portfolio Template",
+    linkUrl: "https://github.com/frestaris/Portfolio-Aris-Fresta",
+    live: "https://arisfresta-portfolio.netlify.app/",
+    images: [portfolio1, portfolio2, portfolio3],
+    description:
+      "A modern personal portfolio website for showcasing projects and skills, built with React, Vite, and Bootstrap CSS. Features include dark/light mode toggle, animated particle background, smooth section navigation via a responsive navbar, EmailJS integration for contact, and a scroll-to-top button.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Bootstrap" },
+      { skill: "Redux" },
+      { skill: "React" },
+    ],
+    backend: [],
+    tools: [],
+  },
+  {
+    id: 6,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
     live: "https://budgetmate-frontend.vercel.app/",
@@ -165,7 +185,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Restaurant Website",
     linkUrl: "https://github.com/frestaris/react-restaurant-app",
     live: "https://react-app-restaurant-website-sample.netlify.app/",
@@ -182,7 +202,7 @@ export const projects = [
     tools: [],
   },
   {
-    id: 7,
+    id: 8,
     title: "Ask",
     linkUrl: "https://github.com/frestaris/ask",
     live: "https://ask-frontend-virid.vercel.app/",
@@ -207,7 +227,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Gym Website",
     linkUrl: "https://github.com/frestaris/Gym-React",
     live: "https://brosgym.netlify.app/",
