@@ -30,8 +30,8 @@ export default function TimelineItem({ exp, idx, total, scrollYProgress }) {
       {/* Dot */}
       <motion.div
         style={{ backgroundColor: bgColor }}
-        className="absolute left-6 md:left-1/2 md:translate-x-[-19px] top-1/2 -translate-x-1/2 -translate-y-1/2
-             w-10 h-10 rounded-full border-10 border-[#1f1f1f]"
+        className="absolute left-6 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+             w-10 h-10 rounded-full border-[10px] border-[#1f1f1f]"
       />
 
       {/* Content wrapper */}

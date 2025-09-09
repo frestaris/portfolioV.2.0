@@ -24,11 +24,12 @@ export default function Experience() {
       <div className="grid grid-cols-6">
         <div className="relative col-span-6 md:col-span-4">
           {/* Line */}
-          <div className="absolute left-6 md:left-1/2 top-0 -translate-x-1/2 md:translate-x-0 h-full">
-            <div className="absolute w-1 h-full bg-gray-700" />
+          {/* Line */}
+          <div className="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 h-full">
+            <div className="absolute left-1/2 -translate-x-1/2 w-[4px] h-full bg-gray-700" />
             <motion.div
               style={{ scaleY: scrollYProgress }}
-              className="absolute origin-top w-1 h-full bg-gradient-to-b from-[#334155] to-[#61DAFB] z-10"
+              className="absolute left-1/2 -translate-x-1/2 origin-top w-[4px] h-full bg-gradient-to-b from-[#334155] to-[#61DAFB] z-10"
             />
           </div>
 

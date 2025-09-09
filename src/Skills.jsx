@@ -51,7 +51,9 @@ const SkillColumn = ({ skills, direction = "up", delay = 0, title }) => {
                   alt={s.skill}
                   className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1"
                 />
-                <span className="text-xs md:text-sm">{s.skill}</span>
+                <span className="text-xs md:text-sm text-center break-words whitespace-normal px-2">
+                  {s.skill}
+                </span>
               </div>
             ))}
           </motion.div>
@@ -81,7 +83,9 @@ const SkillColumn = ({ skills, direction = "up", delay = 0, title }) => {
                   alt={s.skill}
                   className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1"
                 />
-                <span className="text-xs md:text-sm">{s.skill}</span>
+                <span className="text-xs md:text-sm text-center break-words whitespace-normal px-2">
+                  {s.skill}
+                </span>
               </div>
             ))}
           </motion.div>
@@ -109,16 +113,19 @@ export default function Skills() {
   }));
 
   return (
-    <section id="skills" className="h-screen relative text-white py-16 mx-2">
+    <section
+      id="skills"
+      className="min-h-screen relative text-white py-16 px-4"
+    >
       <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center text-[#4ec9b0]">
         <span className="text-[#808080]">{"<"}</span>Skills
         <span className="text-[#808080]">{" />"}</span>
       </h2>
 
-      {/* Flex container instead of grid */}
-      <div className="flex justify-center gap-x-6 max-w-xl mx-auto">
+      {/* Centered container with side space */}
+      <div className="flex justify-center gap-1 sm:gap-4 max-w-6xl mx-auto w-full">
         {columns.map((col, i) => (
-          <div key={i} className="flex-1">
+          <div key={i} className="flex-1 max-w-[180px]">
             <SkillColumn
               skills={col.data}
               direction={col.dir}
