@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { developers, developersSpins } from "./data/developers";
+import { developers, developersSpins } from "../data/developers";
 
 const CARD_HEIGHT = 310;
 const EXTRA_SPACE = 180;
@@ -155,7 +155,7 @@ export default function Hero() {
           </div>
 
           {/* Closing bracket */}
-          <div className="flex text-lg leading-7 mt-4">
+          <div className="flex sm:text-lg text-sm leading-7">
             <span className="text-[#ffc811]">]</span>
           </div>
         </div>

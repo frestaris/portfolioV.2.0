@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import psLogo from "./assets/powershell.png";
-import { emailConfig } from "./data/aboutMe";
+import psLogo from "../assets/powershell.png";
+import { emailConfig } from "../data/aboutMe";
 
 export default function PowerShellModal({ onClose }) {
   const formRef = useRef();

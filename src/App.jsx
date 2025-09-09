@@ -1,9 +1,9 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Experience from "./Experience";
-import Skills from "./Skills";
-import About from "./About";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import About from "./components/About";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {

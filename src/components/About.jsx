@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { aboutMe } from "./data/aboutMe";
+import { aboutMe } from "../data/aboutMe";
 import PowerShellModal from "./PowerShellModal";
 
 export default function About() {

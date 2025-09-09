@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, Reorder } from "framer-motion";
-import { projects } from "./data/projects";
-import reactjs from "./assets/react.png";
+import { projects } from "../data/projects";
+import reactjs from "../assets/react.png";
 
 export default function Projects() {
   const [items, setItems] = useState(projects);
@@ -64,7 +64,6 @@ export default function Projects() {
               key={p.id}
               value={p}
               whileDrag={{
-                backgroundColor: "#1e1e1e",
                 opacity: 1,
               }}
               onDrag={handleDrag}
@@ -72,7 +71,7 @@ export default function Projects() {
           border-l border-r border-white/20
           ${
             active.id === p.id
-              ? "bg-[#1e1e1e] text-[#ffc811] border-t-2 border-t-[#398cd6]"
+              ? "bg-[#1f1f1f] text-[#ffc811] border-t-2 border-t-[#398cd6]"
               : "text-gray-400 hover:text-gray-200"
           }`}
               onClick={() => setActive(p)}

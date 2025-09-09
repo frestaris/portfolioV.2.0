@@ -1,4 +1,4 @@
-import { experiences } from "./data/experiences";
+import { experiences } from "../data/experiences";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import TimelineItem from "./TimelineItem"; // correct spelling + case

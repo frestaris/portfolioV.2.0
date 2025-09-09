@@ -1,4 +1,4 @@
-import { skillGroups } from "./data/skills";
+import { skillGroups } from "../data/skills";
 import { motion } from "framer-motion";
 
 const CARD_HEIGHT = 120;
