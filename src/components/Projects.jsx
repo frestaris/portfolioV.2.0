@@ -12,7 +12,7 @@ export default function Projects() {
   const handleDrag = (event, info) => {
     if (!containerRef.current) return;
     const { left, right } = containerRef.current.getBoundingClientRect();
-    const edgeSize = 50; // px near edge
+    const edgeSize = 50;
     const scrollSpeed = 5;
 
     if (info.point.x < left + edgeSize) {
@@ -22,13 +22,13 @@ export default function Projects() {
     }
   };
 
+  // reset carousel when switching project
   useEffect(() => {
-    // reset carousel when switching project
     setActiveIndex(0);
   }, [active.id]);
 
+  // Preload the first image of each project
   useEffect(() => {
-    // Preload the first image of each project
     projects.forEach((p) => {
       if (p.images[0]) {
         const img = new Image();
@@ -50,7 +50,7 @@ export default function Projects() {
       {/* Tab bar with native scroll */}
       <div
         ref={containerRef}
-        className="w-full overflow-x-auto bg-[#252526] border-b border-[#333] top-0 z-10
+        className="mb-6 w-full overflow-x-auto bg-[#252526] border-b border-[#333] top-0 z-10
              scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-[#252526]"
       >
         <Reorder.Group
@@ -92,7 +92,7 @@ export default function Projects() {
           transition={{ duration: 0.4 }}
           className="h-full flex flex-col md:flex-row gap-6"
         >
-          {/* Left: Carousel (50%), aligned top */}
+          {/* Left: Carousel */}
           <div className="w-full md:w-1/2 flex items-start justify-start">
             <motion.div
               key={active.id}

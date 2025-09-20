@@ -27,7 +27,7 @@ export default function About() {
             className="w-48 h-48 md:w-56 md:h-56 rounded-2xl border border-white/20 shadow-lg object-cover mt-2"
           />
 
-          {/* Experience & Education as comments */}
+          {/* Experience & Education */}
           <div className="mt-6 flex flex-wrap gap-4 text-sm lg:flex-col lg:items-start">
             {aboutMe.badges.map((badge) => {
               const Icon = badge.icon;

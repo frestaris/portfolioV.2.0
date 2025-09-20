@@ -1,7 +1,7 @@
 import { experiences } from "../data/experiences";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-import TimelineItem from "./TimelineItem"; // correct spelling + case
+import TimelineItem from "./TimelineItem";
 
 export default function Experience() {
   const sectionRef = useRef(null);
@@ -23,7 +23,6 @@ export default function Experience() {
 
       <div className="grid grid-cols-6">
         <div className="relative col-span-6 md:col-span-4">
-          {/* Line */}
           {/* Line */}
           <div className="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 h-full">
             <div className="absolute left-1/2 -translate-x-1/2 w-[4px] h-full bg-gray-700" />

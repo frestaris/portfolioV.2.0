@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav ref={navRef} className="fixed top-8 right-8 z-50">
-      {/* Hamburger */}
+      {/* Hamburger animation*/}
       <div className="flex justify-end">
         <div
           onClick={() => setIsOpen((v) => !v)}
@@ -71,7 +71,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu panel */}
+      {/* Mobile menu dropdown*/}
       <AnimatePresence>
         {isOpen && (
           <motion.div

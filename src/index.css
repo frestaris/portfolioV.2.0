@@ -31,7 +31,7 @@ body {
   background: #252526;
 }
 
-/* === Glitch text effect === */
+/* === Glitch text effect on hero image === */
 .glitch {
   position: relative;
   animation: glitch-skew 1s infinite linear alternate-reverse;

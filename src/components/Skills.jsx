@@ -26,7 +26,7 @@ const SkillColumn = ({ skills, direction = "up", delay = 0, title }) => {
         style={{ height: CONTAINER_HEIGHT }}
       >
         {direction === "up" ? (
-          // 🔼 Upward marquee
+          // Upward marquee
           <motion.div
             initial={{ y: 0 }}
             animate={{ y: "-50%" }}
@@ -58,7 +58,7 @@ const SkillColumn = ({ skills, direction = "up", delay = 0, title }) => {
             ))}
           </motion.div>
         ) : (
-          // 🔽 Downward marquee
+          // Downward marquee
           <motion.div
             initial={{ y: "-50%" }}
             animate={{ y: 0 }}

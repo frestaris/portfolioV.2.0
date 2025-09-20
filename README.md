@@ -1,7 +1,20 @@
 # 🚀 Portfolio & Projects Website
 
-A modern developer portfolio website built with **React, Vite, Tailwind CSS, and Framer Motion**.  
-This template is designed to showcase projects in an interactive way, with animations, project carousels, and code snippet previews.
+A modern developer portfolio built with **React, Vite, Tailwind CSS, and Framer Motion**.
+
+I designed this template with inspiration from **Visual Studio Code**, since it’s where I spend most of my days as a developer. The tabbed projects, code-like previews, and clean dark theme give it a familiar, developer-friendly feel while still being highly customizable for personal branding.
+
+🌐 [**Live Demo**](https://aris-fresta-web-developer.netlify.app/)
+
+---
+
+## 📸 Screenshots
+
+![Portfolio Home Screenshot](./src/assets/Screenshot-portfolio.png)
+
+### Contact Form (PowerShell-inspired modal)
+
+![Contact Modal Screenshot](./src/assets/contact-screenshot.png)
 
 ---
 
@@ -40,17 +53,19 @@ src/
 
 ## 🛠️ Getting Started
 
-1. **Install dependencies**
+**Clone the repo from github**
 
-   ```bash
-   npm install
-   ```
+```bash
+git clone https://github.com/frestaris/portfolioV.2.0
+cd portfolioV.2.0
+```
 
-2. **Run the development server**
+**Install dependencies and run the development server**
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+npm run dev
+```
 
 3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
@@ -59,12 +74,6 @@ src/
 ## 🎯 How to Customize
 
 All content is controlled from the `src/data` folder, where each file has its own purpose — you don’t need to touch the core React components.
-
-Look for the 🔧 icon in comments to know what to replace.
-
-```js
-// 🔧 Replace
-```
 
 When adding images or files, don’t forget to **import them from `src/assets/`** (or the folder you added them into).
 
@@ -270,8 +279,14 @@ The build will generate a `dist/` folder you can deploy to **Netlify, Vercel, Gi
 
 ## 📄 License & Copyright
 
-This project is provided as a **commercial template**.  
-See the [LICENSE](./LICENSE) file for full details.
+This project is free to fork, edit, and use for your personal portfolio.
+
+You can deploy it anywhere (Netlify, Vercel, GitHub Pages).
+
+❌ Sale, redistribution, or sublicensing is prohibited.
+
+© 2025 Aris Fresta
+– All rights reserved.
 
 ---
 

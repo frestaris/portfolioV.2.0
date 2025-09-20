@@ -5,6 +5,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import { Toaster } from "react-hot-toast";
+import CookieConsent from "./components/CookieConsent";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Experience />
       <Skills />
       <About />
+      <CookieConsent />
     </>
   );
 };
