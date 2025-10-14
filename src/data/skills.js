@@ -20,6 +20,7 @@ import figma from "../assets/skills-logo/figma.png";
 import mysql from "../assets/skills-logo/mysql.png";
 import postgres from "../assets/skills-logo/postgres.png";
 import python from "../assets/skills-logo/python.png";
+import firebase from "../assets/skills-logo/firebase.png";
 
 export const skillGroups = {
   frontend: [
@@ -43,6 +44,7 @@ export const skillGroups = {
     { skill: "Git", img: git },
     { skill: "Github", img: github },
     { skill: "Postman", img: postman },
+    { skill: "Firebase", img: firebase },
     { skill: "Cloudinary", img: cloudinary },
     { skill: "Google Cloud", img: googlecloud },
     { skill: "Stripe", img: stripe },

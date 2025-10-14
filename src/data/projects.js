@@ -51,7 +51,7 @@ export const projects = [
       socialHub7,
     ],
     description:
-      "A modern social platform built with the MERN stack that combines posts, community interaction, and real-time chat — all in one place. Users can share photos, videos, and posts, follow creators, chat in real time, receive notifications, and explore trending content. Featuring Firebase authentication, Redux Toolkit state management, and Socket.IO-powered messaging with seen ticks, typing indicators, and delivery states.",
+      "Social Hub is a modern social platform built with the MERN stack that combines posts, community interaction, and real-time chat — all in one place. Users can share photos, videos, and posts, follow creators, chat in real time, receive notifications, and explore trending content. Featuring Firebase authentication, Redux Toolkit state management, and Socket.IO-powered messaging with seen ticks, typing indicators, and delivery states.",
     frontend: [
       { skill: "Html" },
       { skill: "Ant Design" },
@@ -67,7 +67,7 @@ export const projects = [
     tools: [
       { skill: "Firebase" },
       { skill: "YouTube API" },
-      { skill: "Google Analytics" },
+      { skill: "Google Cloud APIs" },
     ],
   },
   {

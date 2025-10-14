@@ -1,10 +1,17 @@
 export const experiences = [
   {
     year: "2025",
-    role: "Full-Stack Developer (Contract)",
-    company: "Private Client",
+    role: "Full-Stack Developer (Personal Project)",
+    company: "Social Hub",
     description:
-      "Developed QuickPop, a full-stack accommodation booking platform. Built the frontend with React, Redux Toolkit, and Tailwind CSS, and implemented the backend using Node.js, Express, and PostgreSQL. Integrated key features such as Google Maps for geolocation, Cloudinary for image uploads, and dynamic booking availability filtering.",
+      "Built Social Hub, a full-stack social media platform merging content creation, chat, and community interaction. Implemented real-time messaging with Socket.IO, notifications, post engagement (likes, comments, replies), and user profiles. Developed with the MERN stack and integrated Firebase for authentication and media storage.",
+  },
+  {
+    year: "2025 – Present",
+    role: "Co-Founder & Full-Stack Developer",
+    company: "QuickPop (Startup Prototype)",
+    description:
+      "Co-founded QuickPop, a modern accommodation booking platform reimagining short-term stays with a flexible, user-centric approach. Engineered the entire prototype stack using React, Redux Toolkit, Tailwind CSS, Node.js, Express, and PostgreSQL. Integrated geolocation, image management, and smart availability logic to deliver an intuitive end-to-end booking experience.",
   },
 
   {
@@ -12,20 +19,14 @@ export const experiences = [
     role: "Freelance Web Developer",
     company: "Self-Employed",
     description:
-      "Designed and delivered responsive websites and custom apps for small businesses. Built and sold React-based applications online, focusing on clean UI, performance, and client-specific requirements.",
+      "Designed and delivered responsive websites and custom web apps for clients and small businesses. Specialized in modern React-based frontends with clean UI, strong performance, and tailored client solutions.",
   },
+
   {
     year: "2023 – 2024",
-    role: "Full-Stack Developer (Personal Projects)",
-    company: "Self-Directed",
-    description:
-      "Developed multiple showcase apps including BudgetMate (MERN personal finance tracker with charts), a Car Rental platform with Stripe integration, and a Restaurant ordering app using Redux and Ant Design.",
-  },
-  {
-    year: "2023",
-    role: "Web Developer (Learning & Practice)",
+    role: "Full-Stack Developer (Portfolio Projects)",
     company: "Independent",
     description:
-      "Built portfolio projects such as a Dentist website with booking forms and a Q&A app. Practiced Agile workflows, Git/GitHub collaboration, API integration, and deployments on Netlify/Vercel while expanding technical skills.",
+      "Developed multiple showcase projects including BudgetMate (MERN finance tracker), a Car Rental platform with Stripe integration, and a Restaurant ordering app using Redux and Ant Design. Focused on learning production-ready design and deployment workflows.",
   },
 ];
