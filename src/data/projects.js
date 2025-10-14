@@ -13,9 +13,6 @@ import gym3 from "../assets/projects-images/gym3.png";
 import rentcar1 from "../assets/projects-images/car-rental1.png";
 import rentcar2 from "../assets/projects-images/car-rental2.png";
 import rentcar3 from "../assets/projects-images/car-rental3.png";
-import ask1 from "../assets/projects-images/ask1.png";
-import ask2 from "../assets/projects-images/ask2.png";
-import ask3 from "../assets/projects-images/ask3.png";
 import restaurant1 from "../assets/projects-images/restaurant-1.png";
 import restaurant2 from "../assets/projects-images/restaurant-2.png";
 import restaurant3 from "../assets/projects-images/restaurant-3.png";
@@ -30,10 +27,51 @@ import quickpop8 from "../assets/projects-images/Quickpop-8.png";
 import portfolio1 from "../assets/projects-images/portfolio-1.png";
 import portfolio2 from "../assets/projects-images/portfolio-2.png";
 import portfolio3 from "../assets/projects-images/portfolio-3.png";
+import socialHub1 from "../assets/projects-images/SocialHub1.png";
+import socialHub2 from "../assets/projects-images/SocialHub2.png";
+import socialHub3 from "../assets/projects-images/SocialHub3.png";
+import socialHub4 from "../assets/projects-images/SocialHub4.png";
+import socialHub5 from "../assets/projects-images/SocialHub5.png";
+import socialHub6 from "../assets/projects-images/SocialHub6.png";
+import socialHub7 from "../assets/projects-images/SocialHub7.png";
 
 export const projects = [
   {
     id: 1,
+    title: "Social Hub",
+    linkUrl: "https://github.com/frestaris/SocialHub",
+    live: "https://social-hub-xi.vercel.app/",
+    images: [
+      socialHub1,
+      socialHub2,
+      socialHub3,
+      socialHub4,
+      socialHub5,
+      socialHub6,
+      socialHub7,
+    ],
+    description:
+      "A modern social platform built with the MERN stack that combines posts, community interaction, and real-time chat — all in one place. Users can share photos, videos, and posts, follow creators, chat in real time, receive notifications, and explore trending content. Featuring Firebase authentication, Redux Toolkit state management, and Socket.IO-powered messaging with seen ticks, typing indicators, and delivery states.",
+    frontend: [
+      { skill: "Html" },
+      { skill: "Ant Design" },
+      { skill: "React" },
+      { skill: "Redux" },
+    ],
+    backend: [
+      { skill: "Node.js" },
+      { skill: "Express.js" },
+      { skill: "MongoDB" },
+      { skill: "Socket.IO" },
+    ],
+    tools: [
+      { skill: "Firebase" },
+      { skill: "YouTube API" },
+      { skill: "Google Analytics" },
+    ],
+  },
+  {
+    id: 2,
     title: "Quick Pop",
     live: "https://quick-pop.vercel.app/",
     images: [
@@ -70,7 +108,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Rental Car",
     linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
     live: "https://mern-rental-car-frontend.vercel.app/",
@@ -96,7 +134,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "e-Commerce Plants",
     linkUrl:
       "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
@@ -123,7 +161,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Dentist Website",
     linkUrl: "https://github.com/frestaris/Dentist-Website",
     live: "https://dentist-website-frontend.vercel.app/",
@@ -143,7 +181,7 @@ export const projects = [
     tools: [],
   },
   {
-    id: 5,
+    id: 6,
     title: "Portfolio Template",
     linkUrl: "https://github.com/frestaris/Portfolio-Aris-Fresta",
     live: "https://arisfresta-portfolio.netlify.app/",
@@ -160,7 +198,7 @@ export const projects = [
     tools: [],
   },
   {
-    id: 6,
+    id: 7,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
     live: "https://budgetmate-frontend.vercel.app/",
@@ -185,7 +223,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Restaurant Website",
     linkUrl: "https://github.com/frestaris/react-restaurant-app",
     live: "https://react-app-restaurant-website-sample.netlify.app/",
@@ -200,31 +238,6 @@ export const projects = [
     ],
     backend: [],
     tools: [],
-  },
-  {
-    id: 8,
-    title: "Ask",
-    linkUrl: "https://github.com/frestaris/ask",
-    live: "https://ask-frontend-virid.vercel.app/",
-    images: [ask1, ask2, ask3],
-    description:
-      "Ask is a community-driven Q&A platform where users can post questions, share answers, and engage through comments and likes. It features secure authentication, real-time interactions, and a clean, responsive interface designed to encourage knowledge sharing and discussion.",
-    frontend: [
-      { skill: "Html" },
-      { skill: "Bootstrap CSS" },
-      { skill: "Redux" },
-      { skill: "React" },
-    ],
-    backend: [
-      { skill: "MongoDB" },
-      { skill: "Express.js" },
-      { skill: "Node.js" },
-    ],
-    tools: [
-      { skill: "Firebase" },
-      { skill: "Bcrypt" },
-      { skill: "Jsonwebtoken" },
-    ],
   },
   {
     id: 9,
