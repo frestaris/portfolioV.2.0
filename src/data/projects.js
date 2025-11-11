@@ -41,13 +41,13 @@ import lotto4 from "../assets/projects-images/lotto4.png";
 
 export const projects = [
   {
-    id: 10,
+    id: 1,
     title: "Lotto",
     linkUrl: "https://github.com/frestaris/lotto-app",
     live: "https://lotto-app-mu.vercel.app/",
     images: [lotto1, lotto2, lotto3, lotto4],
     description:
-      "Lotto is a full-stack lottery platform built with Next.js and PostgreSQL. It features four automated lotto games drawn at 8 PM via a cron-based scheduler. Users can buy tickets, view results, and manage wallet credits with dynamic jackpots that roll over when there are no winners. Includes Google authentication, a dashboard for tickets by month, transaction history, and full account management.",
+      "Lotto is a full-stack lottery platform built with Next.js and PostgreSQL. It features four automated lotto games drawn at 8 PM via a cron-based scheduler. Users can buy tickets, view results, and securely top up their wallet credits through Stripe Checkout, with dynamic jackpots that roll over when there are no winners. When users win, their prize credits are automatically added to their wallet. The app includes Google authentication, a dashboard for tickets by month, transaction history, and full account management.",
     frontend: [
       { skill: "Next.js" },
       { skill: "Tailwind CSS" },
@@ -69,7 +69,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Social Hub",
     linkUrl: "https://github.com/frestaris/SocialHub",
     live: "https://social-hub-xi.vercel.app/",
@@ -103,7 +103,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Quick Pop",
     live: "https://quick-pop.vercel.app/",
     images: [
@@ -140,7 +140,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Rental Car",
     linkUrl: "https://github.com/frestaris/Mern_Rental_Car",
     live: "https://mern-rental-car-frontend.vercel.app/",
@@ -166,7 +166,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "e-Commerce Plants",
     linkUrl:
       "https://github.com/frestaris/Full-stack-e-commerce--Plants-website--React",
@@ -193,7 +193,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Dentist Website",
     linkUrl: "https://github.com/frestaris/Dentist-Website",
     live: "https://dentist-website-frontend.vercel.app/",
@@ -213,7 +213,7 @@ export const projects = [
     tools: [],
   },
   {
-    id: 6,
+    id: 7,
     title: "Portfolio Template",
     linkUrl: "https://github.com/frestaris/Portfolio-Aris-Fresta",
     live: "https://arisfresta-portfolio.netlify.app/",
@@ -230,7 +230,7 @@ export const projects = [
     tools: [],
   },
   {
-    id: 7,
+    id: 8,
     title: "BudgetMate",
     linkUrl: "https://github.com/frestaris/budgetmate",
     live: "https://budgetmate-frontend.vercel.app/",
@@ -255,7 +255,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Restaurant Website",
     linkUrl: "https://github.com/frestaris/react-restaurant-app",
     live: "https://react-app-restaurant-website-sample.netlify.app/",
@@ -272,7 +272,7 @@ export const projects = [
     tools: [],
   },
   {
-    id: 9,
+    id: 10,
     title: "Gym Website",
     linkUrl: "https://github.com/frestaris/Gym-React",
     live: "https://brosgym.netlify.app/",
