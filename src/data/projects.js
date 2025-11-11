@@ -34,8 +34,40 @@ import socialHub4 from "../assets/projects-images/SocialHub4.png";
 import socialHub5 from "../assets/projects-images/SocialHub5.png";
 import socialHub6 from "../assets/projects-images/SocialHub6.png";
 import socialHub7 from "../assets/projects-images/SocialHub7.png";
+import lotto1 from "../assets/projects-images/lotto1.png";
+import lotto2 from "../assets/projects-images/lotto2.png";
+import lotto3 from "../assets/projects-images/lotto3.png";
+import lotto4 from "../assets/projects-images/lotto4.png";
 
 export const projects = [
+  {
+    id: 10,
+    title: "Lotto",
+    linkUrl: "https://github.com/frestaris/lotto-app",
+    live: "https://lotto-app-mu.vercel.app/",
+    images: [lotto1, lotto2, lotto3, lotto4],
+    description:
+      "Lotto is a full-stack lottery platform built with Next.js and PostgreSQL. It features four automated lotto games drawn at 8 PM via a cron-based scheduler. Users can buy tickets, view results, and manage wallet credits with dynamic jackpots that roll over when there are no winners. Includes Google authentication, a dashboard for tickets by month, transaction history, and full account management.",
+    frontend: [
+      { skill: "Next.js" },
+      { skill: "Tailwind CSS" },
+      { skill: "Redux Toolkit" },
+      { skill: "TypeScript" },
+    ],
+    backend: [
+      { skill: "Node.js" },
+      { skill: "Prisma ORM" },
+      { skill: "PostgreSQL" },
+      { skill: "NextAuth.js" },
+    ],
+    tools: [
+      { skill: "Cron Scheduler" },
+      { skill: "GitHub Actions" },
+      { skill: "Vercel" },
+      { skill: "Bcrypt" },
+      { skill: "Jsonwebtoken" },
+    ],
+  },
   {
     id: 1,
     title: "Social Hub",

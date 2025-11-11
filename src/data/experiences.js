@@ -1,10 +1,10 @@
 export const experiences = [
   {
     year: "2025",
-    role: "Full-Stack Developer (Personal Project)",
-    company: "Social Hub",
+    role: "Full-Stack Developer (Personal Projects)",
+    company: "Independent",
     description:
-      "Built Social Hub, a full-stack social media platform merging content creation, chat, and community interaction. Implemented real-time messaging with Socket.IO, notifications, post engagement (likes, comments, replies), and user profiles. Developed with the MERN stack and integrated Firebase for authentication and media storage.",
+      "Built and refined multiple full-stack applications demonstrating end-to-end product development — from UI design to backend automation. Projects include Social Hub, a real-time social platform, and a Lotto App, an automated lottery system with cron scheduling, authentication, and wallet management. Focused on scalable architecture, clean UI, and real-world features such as real-time chat, payments, and scheduled tasks.",
   },
   {
     year: "2025 – Present",

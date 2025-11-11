@@ -1,7 +1,9 @@
 import html from "../assets/skills-logo/html.png";
 import css from "../assets/skills-logo/css.png";
 import javascript from "../assets/skills-logo/javascript.png";
+import typescript from "../assets/skills-logo/typescript.png";
 import reactjs from "../assets/skills-logo/react.png";
+import nextjs from "../assets/skills-logo/nextjs.png";
 import bootstrap from "../assets/skills-logo/bootstrap.png";
 import node from "../assets/skills-logo/node.png";
 import github from "../assets/skills-logo/github.png";
@@ -11,8 +13,10 @@ import redux from "../assets/skills-logo/redux.png";
 import tailwind from "../assets/skills-logo/tailwind.png";
 import mongodb from "../assets/skills-logo/mongodb.png";
 import express from "../assets/skills-logo/expressjs.png";
+import nextauth from "../assets/skills-logo/nextauth.png";
 import postman from "../assets/skills-logo/postman.png";
 import stripe from "../assets/skills-logo/stripe.png";
+import jwt from "../assets/skills-logo/jwt.png";
 import cloudinary from "../assets/skills-logo/cloudinary.png";
 import googlecloud from "../assets/skills-logo/googlecloud.png";
 import vercel from "../assets/skills-logo/Vercel.png";
@@ -21,13 +25,16 @@ import mysql from "../assets/skills-logo/mysql.png";
 import postgres from "../assets/skills-logo/postgres.png";
 import python from "../assets/skills-logo/python.png";
 import firebase from "../assets/skills-logo/firebase.png";
+import socketio from "../assets/skills-logo/socketio.png";
 
 export const skillGroups = {
   frontend: [
     { skill: "HTML", img: html },
     { skill: "CSS", img: css },
     { skill: "JavaScript", img: javascript },
+    { skill: "TypeScript", img: typescript },
     { skill: "React", img: reactjs },
+    { skill: "Next.js", img: nextjs },
     { skill: "Bootstrap", img: bootstrap },
     { skill: "Tailwind", img: tailwind },
     { skill: "Redux", img: redux },
@@ -35,10 +42,13 @@ export const skillGroups = {
   backend: [
     { skill: "Node.js", img: node },
     { skill: "Express.js", img: express },
+    { skill: "NextAuth.js", img: nextauth },
+    { skill: "PostgreSQL", img: postgres },
     { skill: "MongoDB", img: mongodb },
-    { skill: "Postgres", img: postgres },
-    { skill: "Mysql", img: mysql },
+    { skill: "MySQL", img: mysql },
     { skill: "Python", img: python },
+    { skill: "JWT", img: jwt },
+    { skill: "Socket.io", img: socketio },
   ],
   tools: [
     { skill: "Git", img: git },
