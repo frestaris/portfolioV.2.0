@@ -64,6 +64,7 @@ export const projects = [
       { skill: "Cron Scheduler" },
       { skill: "GitHub Actions" },
       { skill: "Vercel" },
+      { skill: "Stripe" },
       { skill: "Bcrypt" },
       { skill: "Jsonwebtoken" },
     ],
