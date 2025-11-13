@@ -1,5 +1,5 @@
 import hero_pic from "../assets/profile-pic.jpg";
-import resumeFile from "../assets/Resume_ArisFresta_2025.pdf";
+import resumeFile from "../assets/Aris Fresta_RESUME 2025.pdf";
 
 export const developersSpins = 1; // Change here if you want more or less spins
 
